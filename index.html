@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Lightbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Awesome Image Gallery</h1>
+
+    <div class="gallery-container">
+        <div class="thumbnail" onclick="openLightbox('images/image1.jpg', 'Beautiful Landscape 1')">
+            <img src="1.jpg" alt="NO">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('images/image2.jpg', 'Cityscape at Night')">
+            <img src="2.jpg" alt="NO">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('images/image3.jpg', 'Abstract Art')">
+            <img src="3.jpg" alt="NO">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('images/image4.jpg', 'Macro Photography')">
+            <img src="4.jpg" alt="NO">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('images/image5.jpg', 'Mountain View')">
+            <img src="5.jpg" alt="NO">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-button">&times;</span>
+        <img id="lightbox-img" src="6.jpg" alt="Full Size Image">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
